@@ -19,3 +19,11 @@ model User {
   name  String?
   city  String?
 }
+
+model Todo{
+  id          Int @default(autoincrement()) @id
+  title       String
+  description String
+  done        Boolean
+  userId      Int
+}
